@@ -1,3 +1,4 @@
 #!/bin/bash
-jq --compact-output "{\"#home\":(.[\"#home\"]+[{\"title\":\"$argv[1]\",\"content\":\"$argv[2]\",\"date\":\"$argv[3]\"}])}" hw.json > hw.json.new
-mv hw.json{.new,}
+name=hw.js
+jq --compact-output "{\"home\":(.[\"home\"]+[{\"title\":\"$1\",\"content\":\"$2\",\"date\":\"$3\"}])}" $name > $name.new
+mv $name{.new,}
