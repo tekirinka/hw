@@ -1,2 +1,3 @@
-jq "{\"#home\":(.[\"#home\"]+[{\"title\":\"$argv[1]\",\"content\":\"$argv[2]\",\"date\":\"$argv[3]\"}])}" hw.js > hw.js.new
-mv hw.js{.new,}
+#!/bin/bash
+jq --compact-output "{\"#home\":(.[\"#home\"]+[{\"title\":\"$argv[1]\",\"content\":\"$argv[2]\",\"date\":\"$argv[3]\"}])}" hw.json > hw.json.new
+mv hw.json{.new,}
