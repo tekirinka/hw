@@ -1,0 +1,4 @@
+#!/bin/bash
+name=$(cat name)
+jq --compress-output "{\"home\":[.home[]|select(.title!=\"$1\")]}" $name > $name.new
+mv $name{.new,}

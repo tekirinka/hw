@@ -1,4 +1,4 @@
 #!/bin/bash
-name=hw.js
+name=$(cat name)
 jq --compact-output "{\"home\":(.[\"home\"]+[{\"title\":\"$1\",\"content\":\"$2\",\"date\":\"$3\"}])}" $name > $name.new
 mv $name{.new,}
