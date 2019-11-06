@@ -1,0 +1,4 @@
+#!/bin/bash
+git add hw.js
+git commit -m upd
+git push

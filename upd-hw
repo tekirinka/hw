@@ -4,3 +4,4 @@ jq --compact-output "(.home[]|select(.title==\"$1\")|.content)|=\"$2\"" $name  >
 jq --compact-output "(.home[]|select(.title==\"$1\")|.date)|=\"$3\"" $name.new1  > $name.new2
 rm $name.new1
 mv $name{.new2,}
+./upd

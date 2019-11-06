@@ -2,3 +2,4 @@
 name=$(cat name)
 jq --compact-output "{\"home\":[.home[]|select(.title!=\"$1\")]}" $name > $name.new
 mv $name{.new,}
+./upd
