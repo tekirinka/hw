@@ -42,8 +42,8 @@
     },
     {
       "title": "English",
-      "content": "2019-11-12T00:00:00.000Z",
-      "": "WB 7E retelling"
+      "content": "WB 7E retelling",
+      "date": "2019-11-12T00:00:00.000Z"
     }
   ]
 }
